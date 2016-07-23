@@ -15,7 +15,7 @@ var gradeC = scores.filter(function(score) {
 	return score > 71 ;
 }).length;
 
-gradeC = gradeC - gradeB; 
+gradeC = gradeC - (gradeB + gradeA); 
 console.log("There are " + gradeC + " of students with a grade between 71 and 80.");
 
 var gradeD = scores.filter(function(score) {
